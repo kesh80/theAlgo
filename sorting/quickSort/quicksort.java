@@ -27,6 +27,15 @@ public class quicksort{
         quickee(a,k+1,e);
         }
     }
+    public static void print(int a[] ,int n)
+    {
+ 	System.out.println("array after sorting when we sort array from quicksort method");
+         for(int i=0;i<n;i++)
+         {
+             System.out.println(a[i]);
+         }
+     }
+
     public static void main(String[] args)
     {
         Scanner s = new Scanner (System.in);
@@ -40,10 +49,6 @@ public class quicksort{
             a[i]= s.nextInt();
          }
          quickee(a,0,n-1);
-         System.out.println("array after sorting when we sort array from quicksort method");
-         for(int i=0;i<n;i++)
-         {
-             System.out.println(a[i]);
-         }
+         print(a,n);
     }
 }
